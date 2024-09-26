@@ -1,0 +1,84 @@
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer__column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+.footer__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+.footer__link {
+    list-style-type: none;
+    padding: 0;
+}
+.footer__link-item {
+    margin-bottom: 10px;
+}
+.footer__link-item a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer__column a:hover {
+    color: #f1c40f;
+}
+
+.footer__social-icons a {
+    margin: 0 10px;
+    color: #fff; /* Màu mặc định */
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s; /* Thêm hiệu ứng chuyển tiếp cho sự thay đổi màu sắc */
+}
+
+/* Màu sắc cho mỗi biểu tượng khi hover */
+.footer__social-icons a:hover {
+    color: #fff; /* Giữ màu trắng khi hover */
+}
+
+.footer__social-icons a:hover[aria-label="Facebook"] {
+    color: #3b5998; /* Màu xanh của Facebook */
+}
+
+.footer__social-icons a:hover[aria-label="Twitter"] {
+    color: #1da1f2; /* Màu xanh của Twitter */
+}
+
+.footer__social-icons a:hover[aria-label="Instagram"] {
+    color: #c32aa3; /* Màu hồng của Instagram */
+}
+
+.footer__social-icons a:hover[aria-label="LinkedIn"] {
+    color: #0077b5; /* Màu xanh của LinkedIn */
+}
+
+.footer__bottom {
+    background-color: #111;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.footer__bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #bbb;
+}
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

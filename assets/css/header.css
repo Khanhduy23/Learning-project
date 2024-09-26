@@ -98,17 +98,6 @@
     font-size: 16px;
     color: var(--highlight-color);
 }
-
-
-/* .header__search i {
-    position: absolute;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    background-color: var(--highlight-color);
-    border-radius: 50%;
-    padding: 7px;
-} */
 .header__login-button {
     background-color: var(--button-bg-color);
     color: #333;
