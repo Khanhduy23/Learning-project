@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Học Tập Của Duy</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <button class="header__menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav_item"><a href="#" class="nav__link">Courses</a></li>
+                    <li class="nav_item"><a href="#" class="nav__link">Tutorials</a></li>
+                    <li class="nav_item"><a href="#" class="nav__link">Exercises</a></li>
+                    <li class="nav_item"><a href="#" class="nav__link">Services</a></li>
+                    <li class="nav_item"><a href="#" class="nav__link">Spaces</a></li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <input type="text" name="search" id="search" placeholder="Search..." aria-label="Search" tabindex="1">
+                <button aria-label="Search" tabindex="2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>            
+            <a href="#">
+                <button class="header__login-button" tabindex="8">Login</button>
+            </a>            
+        </div>
+    </header>
+    <article class="article">
+        <section class="content-section">
+            <div class="container-cards">
+                <section class="card">
+                    <div class="card__icon">
+                        <span><i class="fa-brands fa-html5"></i></span>
+                    </div>
+                    <h3 class="card__title">HTML</h3>
+                    <p class="card__description">Học cách xây dựng các trang web từ cấu trúc cơ bản với HTML.</p>
+                    <a href="project-html/index.html" class="card__link" target="_blank">Tìm hiểu thêm</a>
+                </section>
+                <section class="card">
+                    <div class="card__icon">
+                        <span><i class="fa-brands fa-css3-alt"></i></span>
+                    </div>
+                    <h3 class="card__title">CSS</h3>
+                    <p class="card__description">Phong cách hóa trang web của bạn với CSS, tạo sự bắt mắt và trải nghiệm người dùng tốt.</p>
+                    <a href="project-css/index.html" class="card__link" target="_blank">Tìm hiểu thêm</a>
+                </section>
+                <section class="card">
+                    <div class="card__icon">
+                        <span><i class="fa-brands fa-js-square"></i></span>
+                    </div>
+                    <h3 class="card__title">JavaScript</h3>
+                    <p class="card__description">Làm trang web của bạn trở nên tương tác và động với JavaScript.</p>
+                    <a href="project-js/index.html" class="card__link" target="_blank">Tìm hiểu thêm</a>
+                </section>
+                <section class="card">
+                    <div class="card__icon">
+                        <span><i class="fa-brands fa-php"></i></span>
+                    </div>
+                    <h3 class="card__title">PHP</h3>
+                    <p class="card__description">Học ngôn ngữ PHP để xây dựng các trang web động và backend mạnh mẽ.</p>
+                    <a href="project-php/index.html" class="card__link" target="_blank">Tìm hiểu thêm</a>
+                </section>
+                <section class="card">
+                    <div class="card__icon">
+                        <span><i class="fa-brands fa-python"></i></span>
+                    </div>
+                    <h3 class="card__title">Python</h3>
+                    <p class="card__description">Tìm hiểu Python, một ngôn ngữ lập trình mạnh mẽ cho cả backend và AI.</p>
+                    <a href="project-python/index.html" class="card__link" target="_blank">Tìm hiểu thêm</a>
+                </section>
+            </div>
+        </section>
+    <script src="assets/js/menu-toggle.js"></script>
+</body>
+</html>
