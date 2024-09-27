@@ -6,11 +6,9 @@
     --button-hover-bg-color: #f4f4f4;
     --nav-hover-bg-color: rgb(40, 37, 37);
 }
-.header {
+.header__container {
     width: 100%;
     background-color: var(--bg-color);
-}
-.header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
