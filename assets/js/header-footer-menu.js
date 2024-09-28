@@ -44,6 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => {
             console.error('Error loading footer:', error);
-            alert('Could not load footer. Please try again later.');
+            alert('Could not load footer. Please try again late.');
         });
 });
