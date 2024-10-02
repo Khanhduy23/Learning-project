@@ -92,3 +92,23 @@ iframe {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+.output-container {
+    flex-grow: 1;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    resize: both; /* Cho phép kéo thay đổi kích thước cả chiều rộng và chiều cao */
+    overflow: auto; /* Đảm bảo xuất hiện thanh cuộn nếu nội dung vượt quá kích thước khung */
+    min-width: 300px; /* Chiều rộng tối thiểu */
+    min-height: 400px; /* Chiều cao tối thiểu */
+    max-width: 100%; /* Chiều rộng tối đa bằng kích thước màn hình */
+    max-height: 80vh; /* Chiều cao tối đa là 80% chiều cao màn hình */
+}
+@media (max-width: 768px) {
+    .output-container {
+        resize: none; /* Không cho phép kéo kích thước trên màn hình nhỏ */
+        height: 300px; /* Đặt chiều cao cố định cho phần hiển thị trên mobile */
+    }
+}
+.output-container {
+    transition: width 0.3s ease, height 0.3s ease;
+}

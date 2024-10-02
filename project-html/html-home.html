@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Examples</title>
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/style-paperhtml.css">
+    <link rel="stylesheet" href="../assets/css/code-container.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header></header>
+    <main class="paper">
+        <h1>HTML HOME</h1>
+        <p>HTML (HyperText Markup Language) giống như khung xương của mọi trang web. Nếu ví trang web là ngôi nhà, thì HTML chính là nền móng giúp bạn sắp xếp các phòng, cửa sổ, và cửa ra vào đúng chỗ. Nó giúp trình duyệt hiểu cách hiển thị văn bản, hình ảnh, liên kết, và các thành phần khác. Sử dụng HTML sẽ giúp bạn tạo nên cấu trúc trang web một cách dễ dàng và hiển thị mọi thứ theo ý muốn.</p>        
+        <nav class="table-of-contents">
+            <h2>Mục Lục</h2>
+            <ul>
+                <li><a href="#example1">Ví dụ 1</a></li>
+                <li><a href="#example2">Ví dụ 2</a></li>
+            </ul>
+        </nav>
+        <!-- Example 1 -->
+        <section class="code-container" id="example1">
+            <h2>Ví dụ 1</h2>
+            <p>Khám phá sự sáng tạo của bạn với trình soạn thảo "Tự viết" thú vị! Tại đây, bạn có thể tự do chỉnh sửa mã HTML và thấy ngay sự thay đổi trong tích tắc. Khi hoàn thành, nhấn <strong>lưu</strong> để lưu kết quả vào không gian của bạn. Nếu bạn muốn mở rộng không gian làm việc, chỉ cần nhấn <strong>mở rộng</strong>, và nếu muốn thu gọn lại, nhấn <strong>đóng</strong> là xong.</p>
+            <p>Hãy thử viết mã dựa trên những ví dụ dưới đây và cảm nhận sự thú vị khi tự tay tạo ra một trang web của riêng mình! Đừng quên nhấn <strong>lưu</strong> khi hoàn thành để giữ lại kết quả. Nếu không lưu, mã sẽ trở về trạng thái ban đầu, chỉ còn lại ví dụ mẫu.</p>
+            <p>Sau đây là ví dụ cách tạo một đoạn tiêu đề và một đoạn văn bản: </p>
+            <div class="code-example collapsed" id="codeExample1">
+                <pre><code class="language-html">&lt;<span class="keyword">!DOCTYPE</span> <span class="tag">html</span>&gt;
+&lt;<span class="tag">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;
+&lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;
+    &lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="value">"viewport"</span> <span class="attribute">content</span>=<span class="value">"width=device-width, initial-scale=1.0"</span>&gt;
+    &lt;<span class="tag">title</span>&gt;<span class="value">Document</span>&lt;/<span class="tag">title</span>&gt;
+&lt;/<span class="tag">head</span>&gt;
+&lt;<span class="tag">body</span>&gt;
+    &lt;<span class="tag">h1</span>&gt;<span class="value">This is a Heading</span>&lt;/<span class="tag">h1</span>&gt;
+    &lt;<span class="tag">p</span>&gt;<span class="value">This is a paragraph.</span>&lt;/<span class="tag">p</span>&gt;
+&lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="tag">html</span>&gt;</code></pre>
+            </div>
+            <button class="toggle-code" onclick="toggleCode('codeExample1')">Mở rộng</button>
+            <button onclick="editCode('html-home', 'example1-1')">Tự viết</button>
+        </section>
+
+        <!-- Example 2 -->
+        <section class="code-container" id="example2">
+            <h2>Ví dụ 2</h2>
+            <p>Đây là bố cục cơ bản của một trang web bao gồm các phần: header, nav, aside, article, và footer. Nếu dài quá bạn có thể copy và paste vào khung chứa code</p>
+            <div class="code-example collapsed" id="codeExample2">
+                <pre><code class="language-html">&lt;<span class="keyword">!DOCTYPE</span> <span class="tag">html</span>&gt;
+    &lt;<span class="tag">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;
+    &lt;<span class="tag">head</span>&gt;
+        &lt;<span class="tag">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;
+        &lt;<span class="tag">meta</span> <span class="attribute">name</span>=<span class="value">"viewport"</span> <span class="attribute">content</span>=<span class="value">"width=device-width, initial-scale=1.0"</span>&gt;
+        &lt;<span class="tag">title</span>&gt;<span class="value">Layout Example</span>&lt;/<span class="tag">title</span>&gt;
+        &lt;<span class="tag">style</span>&gt;
+            <span class="keyword">body</span> {
+                <span class="attribute">font-family</span>: <span class="value">Arial, sans-serif</span>;
+                <span class="attribute">margin</span>: <span class="value">0</span>;
+                <span class="attribute">padding</span>: <span class="value">0</span>;
+            }
+            <span class="keyword">header</span> {
+                <span class="attribute">background-color</span>: <span class="value">#4CAF50</span>;
+                <span class="attribute">color</span>: <span class="value">white</span>;
+                <span class="attribute">padding</span>: <span class="value">20px</span>;
+                <span class="attribute">text-align</span>: <span class="value">center</span>;
+            }
+            <span class="keyword">nav</span> {
+                <span class="attribute">background-color</span>: <span class="value">#333</span>;
+                <span class="attribute">overflow</span>: <span class="value">hidden</span>;
+            }
+            <span class="keyword">nav ul</span> {
+                <span class="attribute">list-style-type</span>: <span class="value">none</span>;
+                <span class="attribute">margin</span>: <span class="value">0</span>;
+                <span class="attribute">padding</span>: <span class="value">0</span>;
+            }
+            <span class="keyword">nav ul li</span> {
+                <span class="attribute">float</span>: <span class="value">left</span>;
+                <span class="attribute">padding</span>: <span class="value">14px 20px</span>;
+                <span class="attribute">color</span>: <span class="value">white</span>;
+                <span class="attribute">cursor</span>: <span class="value">pointer</span>;
+            }
+            <span class="keyword">nav ul li a</span> {
+                <span class="attribute">color</span>: <span class="value">white</span>;
+                <span class="attribute">text-decoration</span>: <span class="value">none</span>;
+            }
+            <span class="keyword">nav ul li:hover</span> {
+                <span class="attribute">background-color</span>: <span class="value">#575757</span>;
+            }
+            <span class="keyword">section</span>, <span class="keyword">article</span>, <span class="keyword">aside</span>, <span class="keyword">footer</span> {
+                <span class="attribute">padding</span>: <span class="value">20px</span>;
+                <span class="attribute">margin</span>: <span class="value">10px 0</span>;
+            }
+            <span class="keyword">section</span> {
+                <span class="attribute">display</span>: <span class="value">flex</span>;
+                <span class="attribute">justify-content</span>: <span class="value">space-between</span>;
+                <span class="attribute">background-color</span>: <span class="value">#f4f4f4</span>;
+            }
+            <span class="keyword">article</span>, <span class="keyword">aside</span> {
+                <span class="attribute">width</span>: <span class="value">48%</span>;
+            }
+            <span class="keyword">article</span> {
+                <span class="attribute">background-color</span>: <span class="value">#ddd</span>;
+            }
+            <span class="keyword">aside</span> {
+                <span class="attribute">background-color</span>: <span class="value">#ccc</span>;
+            }
+            <span class="keyword">footer</span> {
+                <span class="attribute">background-color</span>: <span class="value">#4CAF50</span>;
+                <span class="attribute">color</span>: <span class="value">white</span>;
+                <span class="attribute">text-align</span>: <span class="value">center</span>;
+            }
+        &lt;/<span class="tag">style</span>&gt;
+    &lt;/<span class="tag">head</span>&gt;
+    &lt;<span class="tag">body</span>&gt;
+        &lt;<span class="tag">header</span>&gt;
+            &lt;<span class="tag">h1</span>&gt;<span class="value">Website Title</span>&lt;/<span class="tag">h1</span>&gt;
+        &lt;/<span class="tag">header</span>&gt;
+        &lt;<span class="tag">nav</span>&gt;
+            &lt;<span class="tag">ul</span>&gt;
+                &lt;<span class="tag">li</span>&gt;&lt;<span class="tag">a</span> href=<span class="value">"#"</span>&gt;<span class="value">Home</span>&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">li</span>&gt;
+                &lt;<span class="tag">li</span>&gt;&lt;<span class="tag">a</span> href=<span class="value">"#"</span>&gt;<span class="value">About</span>&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">li</span>&gt;
+                &lt;<span class="tag">li</span>&gt;&lt;<span class="tag">a</span> href=<span class="value">"#"</span>&gt;<span class="value">Contact</span>&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">li</span>&gt;
+            &lt;/<span class="tag">ul</span>&gt;
+        &lt;/<span class="tag">nav</span>&gt;
+        &lt;<span class="tag">section</span>&gt;
+            &lt;<span class="tag">article</span>&gt;
+                &lt;<span class="tag">h2</span>&gt;<span class="value">Article Title</span>&lt;/<span class="tag">h2</span>&gt;
+                &lt;<span class="tag">p</span>&gt;<span class="value">This is the main content area.</span>&lt;/<span class="tag">p</span>&gt;
+            &lt;/<span class="tag">article</span>&gt;
+            &lt;<span class="tag">aside</span>&gt;
+                &lt;<span class="tag">h2</span>&gt;<span class="value">Sidebar Title</span>&lt;/<span class="tag">h2</span>&gt;
+                &lt;<span class="tag">p</span>&gt;<span class="value">This is a sidebar area.</span>&lt;/<span class="tag">p</span>&gt;
+            &lt;/<span class="tag">aside</span>&gt;
+        &lt;/<span class="tag">section</span>&gt;
+        &lt;<span class="tag">footer</span>&gt;
+            &lt;<span class="tag">p</span>&gt;<span class="value">Footer content here.</span>&lt;/<span class="tag">p</span>&gt;
+        &lt;/<span class="tag">footer</span>&gt;
+    &lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="tag">html</span>&gt;</code></pre>
+            </div>
+            <button class="toggle-code" onclick="toggleCode('codeExample2')">Mở rộng</button>
+            <button onclick="editCode('html-home', 'example1-2')">Tự viết</button>
+        </section>
+        <h2>Giới thiệu về không gian code</h2>
+        <p>Trong không gian code, bạn sẽ được trải nghiệm ba phần chính:</p>
+        <ol>
+            <li>Phần HTML: Nơi bạn sẽ thỏa sức sáng tạo và lập trình mã HTML để xây dựng cấu trúc cho trang web của mình.</li>
+            <li>Phần CSS: Tại đây, bạn có thể tùy chỉnh phong cách và giao diện của trang bằng cách sử dụng mã CSS, biến những ý tưởng của bạn thành hiện thực. (sẽ học ở chương sau)</li>
+            <li>Phần JavaScript: Đây là không gian để bạn thêm các tính năng tương tác, giúp trang web trở nên sống động và hấp dẫn hơn. (sẽ học ở chương sau)</li>
+        </ol>
+        <p><strong>Lưu ý:</strong> Trong không gian code chỉ có một mẫu nhất định việc của bạn là kham thảo ví dụ và code như ví dụ hoặc có thể sáng tạo thêm nữa tùy bạn miễn sau là phù hợp với cú pháp và theo ý bạn muốn.   </p>
+        <h4>Bây giờ hãy bắt đầu trãi nghiệm sâu hơn về khóa học HTML nào. dooo</h4>
+        <div class="navigation">
+            <a href="html-home.html" class="btn-previous">Trước</a>
+            <a href="index.html" class="btn-main">Trang chính</a>
+            <a href="html-introduction.html" class="btn-next">Sau</a>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../assets/js/header-footer-menu.js"></script>
+    <script src="../assets/js/togglecode.js"></script>
+</body>
+</html>

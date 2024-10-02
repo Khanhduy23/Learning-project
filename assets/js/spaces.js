@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
         theme: 'monokai',
         lineNumbers: true,
         autoCloseTags: true,
-        extraKeys: { "Ctrl-Space": "autocomplete" }, // Bật gợi ý mã bằng Ctrl-Space
         tabSize: 4, // Kích thước tab
         indentUnit: 4 // Số lượng ký tự khi nhấn Enter
     });
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
         theme: 'monokai',
         lineNumbers: true,
         autoCloseBrackets: true,
-        extraKeys: { "Ctrl-Space": "autocomplete" }, // Bật gợi ý mã bằng Ctrl-Space
         tabSize: 4, // Kích thước tab
         indentUnit: 4 // Số lượng ký tự khi nhấn Enter
     });
@@ -30,28 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
         theme: 'monokai',
         lineNumbers: true,
         autoCloseBrackets: true,
-        extraKeys: { "Ctrl-Space": "autocomplete" }, // Bật gợi ý mã bằng Ctrl-Space
         tabSize: 4, // Kích thước tab
         indentUnit: 4 // Số lượng ký tự khi nhấn Enter
-    });
-
-    // Tự động gợi ý mã khi người dùng nhập
-    htmlEditor.on("inputRead", function(editor, change) {
-        if (change.text[0] !== " ") {
-            CodeMirror.commands.autocomplete(editor);
-        }
-    });
-
-    cssEditor.on("inputRead", function(editor, change) {
-        if (change.text[0] !== " ") {
-            CodeMirror.commands.autocomplete(editor);
-        }
-    });
-
-    jsEditor.on("inputRead", function(editor, change) {
-        if (change.text[0] !== " ") {
-            CodeMirror.commands.autocomplete(editor);
-        }
     });
 
     // Auto-run code on input change
@@ -64,6 +42,35 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Function to switch between editors
+// function openEditor(editorId) {
+//     var editors = document.querySelectorAll('.code-editor__editor-area');
+//     editors.forEach(editor => editor.classList.remove('code-editor__editor-area--active'));
+//     document.getElementById(editorId).classList.add('code-editor__editor-area--active');
+
+//     var tablinks = document.querySelectorAll('.code-editor__tab');
+//     tablinks.forEach(tab => tab.classList.remove('code-editor__tab--active'));
+//     document.querySelector(`button[onclick="openEditor('${editorId}')"]`).classList.add('code-editor__tab--active');
+
+//     if (editorId === 'htmlEditor') {
+//         htmlEditor.refresh();
+//     } else if (editorId === 'cssEditor') {
+//         cssEditor.refresh();
+//     } else if (editorId === 'jsEditor') {
+//         jsEditor.refresh();
+//     }
+// }
+document.addEventListener('DOMContentLoaded', function () {
+    var tabButtons = document.querySelectorAll('.code-editor__tab');
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            var editorId = this.getAttribute('data-editor');
+            openEditor(editorId);
+        });
+    });
+
+    document.getElementById('save-btn').addEventListener('click', saveCode);
+});
+
 function openEditor(editorId) {
     var editors = document.querySelectorAll('.code-editor__editor-area');
     editors.forEach(editor => editor.classList.remove('code-editor__editor-area--active'));
@@ -71,7 +78,7 @@ function openEditor(editorId) {
 
     var tablinks = document.querySelectorAll('.code-editor__tab');
     tablinks.forEach(tab => tab.classList.remove('code-editor__tab--active'));
-    document.querySelector(`button[onclick="openEditor('${editorId}')"]`).classList.add('code-editor__tab--active');
+    document.querySelector(`[data-editor="${editorId}"]`).classList.add('code-editor__tab--active');
 
     if (editorId === 'htmlEditor') {
         htmlEditor.refresh();

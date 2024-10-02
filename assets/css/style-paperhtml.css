@@ -1,0 +1,129 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.paper {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1100px;
+    height: auto;
+    overflow-y: auto;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.black-text {
+    color: #333;
+}
+
+h1 {
+    font-size: 26px;
+    margin-top: 0;
+    color: #ea8939;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #005a9e;
+}
+
+.table-of-contents {
+    list-style-type: none;
+    padding: 0;
+}
+
+.table-of-contents li {
+    margin: 10px 0;
+}
+
+.table-of-contents a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+}
+
+.table-of-contents a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.toggle-code, .edit-code {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.toggle-code:hover, .edit-code:hover {
+    background-color: #005a9e;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-previous, .btn-next, .btn-main {
+    padding: 10px 15px;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-previous:hover, .btn-next:hover, .btn-main:hover {
+    background-color: #005a9e;
+}
+
+@media (max-width: 600px) {
+    .paper {
+        width: 85%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn-next {
+        padding: 8px 16px;
+    }
+
+    .code-example {
+        font-size: 14px;
+    }
+}
