@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trình Biên Tập Mã</title>
+    <link rel="stylesheet" href="assets/css/spaces.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
+    <!-- Thêm CSS cho gợi ý mã -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/show-hint.min.css">
+</head>
+<body>
+    <div class="header">
+        Trình biên tập mã
+        <a class="header__link" href="#"><button>Quay về</button></a>
+    </div>
+    <div class="editor-container">
+        <div class="code-editor">
+            <div class="code-editor__tabs">
+                <button class="code-editor__tab code-editor__tab--active" onclick="openEditor('htmlEditor')">HTML</button>
+                <button class="code-editor__tab" onclick="openEditor('cssEditor')">CSS</button>
+                <button class="code-editor__tab" onclick="openEditor('jsEditor')">JS</button>
+                <button class="save-btn" onclick="saveCode()">Lưu</button>
+            </div>
+            <div id="htmlEditor" class="code-editor__editor-area code-editor__editor-area--active">
+                <label for="htmlcode" class="sr-only">HTML Code:</label>
+                <textarea id="htmlcode" title="Code HTML here">&lt;!-- Viết mã html ở đây nhoa --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+            </div>
+            <div id="cssEditor" class="code-editor__editor-area">
+                <label for="csscode" class="sr-only">CSS Code:</label>
+                <textarea id="csscode" placeholder="Viết mã CSS ở đây nhoa" title="Code CSS here">/* Viết mã CSS ở đây nhoa */</textarea>
+            </div>
+            <div id="jsEditor" class="code-editor__editor-area">
+                <label for="jscode" class="sr-only">JS Code:</label>
+                <textarea id="jscode" placeholder="Viết mã JS ở đây nha" title="Code JS here">// Viết mã js ở đây nhoa</textarea>
+            </div>
+            <div class="output-container">
+                <iframe id="output" title="Output Frame"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/htmlmixed/htmlmixed.min.js"></script>
+    
+    <script src="assets/js/spaces.js"></script>
+</body>
+</html>
