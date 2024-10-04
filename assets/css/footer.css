@@ -1,11 +1,24 @@
+:root {
+    --color-background: rgb(248, 248, 248);
+    --color-border: #fff;
+    --color-title: rgb(231, 150, 53);
+    --color-link: black;
+    --color-social-default: #0c0c0c;
+    --color-social-facebook: #3b5998;
+    --color-social-twitter: #1da1f2;
+    --color-social-instagram: #c32aa3;
+    --color-social-linkedin: #0077b5;
+    --color-footer-bottom: #faf8f8;
+    --color-text: black;
+}
 .footer {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 0;
+    background-color: var(--color-background);
+    border: 2px solid var(--color-border);
     text-align: center;
 }
 .footer__container {
     display: flex;
+    gap: 20px; /* Hoặc giá trị mà bạn cảm thấy phù hợp */
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -17,9 +30,9 @@
     margin: 20px;
 }
 .footer__title {
-    font-size: 20px;
+    font-size: 1.25rem; /* Tương đương với 20px */
     margin-bottom: 20px;
-    color: #f1c40f;
+    color: var(--color-title);
 }
 .footer__link {
     list-style-type: none;
@@ -29,56 +42,54 @@
     margin-bottom: 10px;
 }
 .footer__link-item a {
-    color: #bbb;
+    color: var(--color-link);
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 16px;
 }
-.footer__column a:hover {
-    color: #f1c40f;
+.footer__link-item a:hover {
+    color: var(--color-social-default); /* Hoặc một màu khác */
+    text-decoration: underline; /* Thêm gạch chân khi hover */
 }
-
 .footer__social-icons a {
+    color: var(--color-social-default);
     margin: 0 10px;
-    color: #fff; /* Màu mặc định */
     font-size: 20px;
-    text-decoration: none;
-    transition: color 0.3s; /* Thêm hiệu ứng chuyển tiếp cho sự thay đổi màu sắc */
-}
-
-/* Màu sắc cho mỗi biểu tượng khi hover */
-.footer__social-icons a:hover {
-    color: #fff; /* Giữ màu trắng khi hover */
 }
 
 .footer__social-icons a:hover[aria-label="Facebook"] {
-    color: #3b5998; /* Màu xanh của Facebook */
+    color: var(--color-social-facebook);
 }
 
 .footer__social-icons a:hover[aria-label="Twitter"] {
-    color: #1da1f2; /* Màu xanh của Twitter */
+    color: var(--color-social-twitter);
 }
 
 .footer__social-icons a:hover[aria-label="Instagram"] {
-    color: #c32aa3; /* Màu hồng của Instagram */
+    color: var(--color-social-instagram);
 }
 
 .footer__social-icons a:hover[aria-label="LinkedIn"] {
-    color: #0077b5; /* Màu xanh của LinkedIn */
+    color: var(--color-social-linkedin);
 }
 
 .footer__bottom {
-    background-color: #111;
+    background-color: var(--color-footer-bottom);
     padding: 20px 0;
-    margin-top: 40px;
 }
+
 .footer__bottom p {
-    margin: 0;
-    font-size: 14px;
-    color: #bbb;
+    color: var(--color-text);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Bóng đổ phía trên */
+    padding-top: 20px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .footer__container {
         flex-direction: column;
         align-items: center;
+    }
+    .footer__column {
+        margin: 10px 0;
+        text-align: center; /* Căn giữa văn bản cho các cột */
     }
 }

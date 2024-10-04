@@ -2,22 +2,22 @@
     <button class="header__menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span><i class="fa-solid fa-bars"></i></span>
     </button>
-    <nav class="header__nav">
+    <nav class="header__nav" aria-label="Main navigation">
         <ul class="nav__list">
-            <li class="nav_item"><a href="../index.html" class="nav__link">Khóa học</a></li>
-            <li class="nav_item"><a href="#" class="nav__link">Hướng dẫn</a></li>
-            <li class="nav_item"><a href="#" class="nav__link">Bài tập</a></li>
-            <li class="nav_item"><a href="#" class="nav__link">Dịch vụ</a></li>
-            <li class="nav_item"><a href="../spaces.html" class="nav__link">Không gian</a></li>
+            <li class="nav__item"><a href="../index.html" class="nav__link">Khóa học</a></li>
+            <li class="nav__item"><a href="javascript:void(0)" class="nav__link">Khám phá</a></li>
+            <li class="nav__item"><a href="javascript:void(0)" class="nav__link">Bài tập</a></li>
+            <li class="nav__item"><a href="javascript:void(0)" class="nav__link">Dịch vụ</a></li>
+            <li class="nav__item"><a href="javascript:void(0)" class="nav__link">Không gian</a></li>
         </ul>
     </nav>
-    <div class="header__search">
-        <input type="text" name="search" id="search" placeholder="Search..." aria-label="Search" tabindex="1">
-        <button aria-label="Search" tabindex="2">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-    </div>            
-    <a href="#">
-        <button class="header__login-button" tabindex="8">Login</button>
-    </a>            
+    <div class="header__actions">
+        <div class="header__search">
+            <input type="text" name="search" id="search" placeholder="Search..." aria-label="Search" tabindex="1">
+            <button type="button" aria-label="Search" tabindex="2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <button class="header__login-button" tabindex="3">Login</button>
+    </div>
 </div>
