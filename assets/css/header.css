@@ -14,7 +14,7 @@
     background-color: var(--bg-color);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 20px;
     height: var(--header-height);
     position: relative;
